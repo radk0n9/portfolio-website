@@ -138,6 +138,7 @@ svg {
 
 .title-s {
     font-weight: 600;
+    font-size: 1.1rem;
 }
 
 #email {
@@ -155,8 +156,8 @@ svg {
     padding: 3rem;
 }
 
-.col-md-6 {
-    width: 50%;
+#email {
+    overflow-wrap: break-word;
 
 }
 
@@ -174,10 +175,14 @@ svg {
 .about-mf .about-img img {
   margin-left: 10px;
 }
-@media (min-width: 767px) {
-  .about-mf .box-pl2 {
-    margin-top: 3rem;
-    padding-left: 0rem;
-  }
+
+.title-left {
+    font-size: 25px;
 }
+
+.text-about-me {
+    font-size: 20px;
+    font-weight: 300;
+}
+
 
