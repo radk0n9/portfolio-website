@@ -189,9 +189,38 @@
                       <h5 class="title-left">Send Message to Me :)</h5>
                       <div class="line"></div>
                     </div>
-                    <form>
+                    <div>
+                      <form action="{{ url_for('contact') }}" method="post" id="contactForm">
+                        <div class="row">
+                          <div class="col-md-12 mb-3">
+                            <div class="form-floating">
+                              <input type="text" class="form-control" id="InputName" required>
+                              <label for="InputName">Your Name</label>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-floating">
+                              <input type="email" class="form-control" id="InputEmail" required>
+                              <label for="InputEmail">Your Email</label>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-floating">
+                              <input type="text" class="form-control" id="InputSubject" required>
+                              <label for="InputSubject">Subject</label>
+                            </div>
+                          </div>
+                          <div class="col-md-12mb-3">
+                            <div class="form-floating">
+                              <textarea class="form-control" rows="5" style="height: 99px;" id="InputMessage" required></textarea>
+                              <label for="InputMessage">Message</label>
+                            </div>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
 
-                    </form>
+                      </form>
+                    </div>
                   </div>
                 <div class="col-md-6">
                   <div class="title-box-6 pt-4 pb-4">

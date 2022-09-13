@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from flask_bootstrap import Bootstrap
 import requests
 
@@ -18,6 +18,13 @@ for p in github_json:
 def home():
     how_many_items_portfolio = github_json
     return render_template("index.html", work_contents=how_many_items_portfolio)
+
+
+@app.route("/contact", methods=["GET", "POST"])
+def contact():
+    if request.method == "POST":
+        data = request.form
+        print(data)
 
 
 if __name__ == "__main__":

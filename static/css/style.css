@@ -179,7 +179,11 @@ svg {
 }
 
 .title-left {
-    font-size: 25px;
+    font-size: 1.7rem;
+}
+
+.title-left h5 {
+    margin-top: 0;
 }
 
 .text-about-me {
