@@ -7,8 +7,8 @@ Bootstrap(app)
 
 r = requests.get("https://api.github.com/users/radk0n9/repos")
 github_json = r.json()
-for p in github_json:
-    print(p["created_at"].split("T")[0])
+# for p in github_json:
+#     print(p["created_at"].split("T")[0])
 # first_one = github_json[0]
 # print(first_one["name"])
 

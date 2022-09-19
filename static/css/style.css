@@ -152,6 +152,7 @@ svg {
     font-style: italic;
 }
 
+
 .box-shadow-full {
     color: black;
     padding: 3rem 2rem;
@@ -161,9 +162,10 @@ svg {
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
 }
 
-@media (min-width: 768px)
-.box-shadow-full {
+@media (min-width: 768px) {
+  .box-shadow-full {
     padding: 3rem;
+  }
 }
 
 #email {
@@ -252,4 +254,21 @@ hr {
     height: 60px;
     width: 60px;
     margin: 0.5rem;
+}
+
+.title-box-2 {
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background-color: #F5861A;
+    border-color: #F5861A;
+    border-radius: 25px;
+    padding: 10px 24px;
+    link-hover-color: #F5861A;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    background-color: #cf5e02;
+    border-color: #cf5e02;
 }
