@@ -173,6 +173,11 @@ svg {
 
 }
 
+#about, #portfolio, #contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 .about-mf .about-img {
   margin-bottom: 2rem;
 }
