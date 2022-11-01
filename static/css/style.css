@@ -12,6 +12,13 @@ html {
     font-size: 1.3rem;
     font-weight: 700;
     color: white;
+    text-decoration: none!important;
+    padding: 0.5rem 1rem;
+}
+
+a:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 30%);
+    text-decoration: underline;
 }
 
 #container-header {
