@@ -184,9 +184,14 @@ svg {
 
 }
 
-#about, #portfolio, #contact {
-    padding-top: 125px;
+#about {
+    padding-top: 105px;
     padding-bottom: 100px;
+}
+
+#portfolio, #contact {
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 .about-mf .about-img {
