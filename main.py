@@ -27,11 +27,11 @@ def send_email(name, email, subject, message):
         connection.login(user=str(EMAIL_PYTHON), password=str(PASSWORD_PYTHON))
         connection.sendmail(from_addr=EMAIL_PYTHON,
                             to_addrs=EMAIL_PYTHON,
-                            msg=f"Subject: New Message from Portfolio Website\n\n"
-                                f"Name: {name}\n"
-                                f"Email: {email}\n"
-                                f"Subject: {subject}\n"
-                                f"Message: {message}")
+                            msg=f'Subject: New Message from Portfolio Website\n\n'
+                                f'Name: {name}\n'
+                                f'Email: {email}\n'
+                                f'Subject: {subject}\n'
+                                f'Message: {message.encode("utf8")}')
 
 
 @app.route("/", methods=["GET", "POST"])
@@ -44,6 +44,7 @@ def home():
         email = data["email"]
         subject = data["subject"]
         message = data["message"]
+        print(message)
         send_email(name, email, subject, message)
     return render_template("index.html", work_contents=how_many_items_portfolio)
 
