@@ -199,9 +199,14 @@ svg {
     padding-bottom: 100px;
 }
 
-#portfolio, #contact {
+#portfolio {
     padding-top: 90px;
-    padding-bottom: 90px;
+    padding-bottom: 60px;
+}
+
+#contact {
+    padding-top: 90px;
+    padding-bottom: 10px;
 }
 
 .about-mf .about-img {
@@ -311,3 +316,18 @@ hr {
     background-color: #cf5e02;
     border-color: #cf5e02;
 }
+
+footer {
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
+    position: relative;
+}
+
+footer .nav-link {
+    color: #1e1e1e!important;
+}
+
+footer .nav-link:hover {
+    color: #F5861A!important;
+}
+
