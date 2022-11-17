@@ -40,11 +40,6 @@ svg {
     vertical-align: middle;
 }
 
-
-.collapse.show {
-    margin-bottom: 30px
-}
-
 .navbar-collapse {
     flex-grow: 0;
 }
@@ -179,7 +174,6 @@ svg {
     padding: 3rem 2rem;
     position: relative;
     background-color: #fff;
-    margin-bottom: 3rem;
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
 }
 
@@ -318,13 +312,12 @@ hr {
 }
 
 footer {
-    margin: 1rem 1rem;
     padding: 1rem 1rem;
     position: relative;
 }
 
 footer .nav-link {
-    color: #1e1e1e!important;
+    color: gray!important;
 }
 
 footer .nav-link:hover {
