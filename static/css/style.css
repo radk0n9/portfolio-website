@@ -91,6 +91,16 @@ svg {
 
 }
 
+.alert {
+    left: 32%;
+    max-width: 35%;
+    padding: 1.2rem 1.2rem!important;
+}
+
+.alert p {
+    margin-bottom: 0px!important;
+}
+
 .hero-inner {
     padding: 40px 0;
 }

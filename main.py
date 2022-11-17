@@ -37,6 +37,7 @@ def send_email(name, email, subject, message):
 @app.route("/", methods=["GET", "POST"])
 @app.route("/index.html", methods=["GET", "POST"])
 def home():
+    message_send = False
     how_many_items_portfolio = github_json
     if request.method == "POST":
         data = request.form
@@ -44,9 +45,14 @@ def home():
         email = data["email"]
         subject = data["subject"]
         message = data["message"]
-        print(message)
+        message_send = True
         send_email(name, email, subject, message)
-    return render_template("index.html", work_contents=how_many_items_portfolio)
+    return render_template("index.html", work_contents=how_many_items_portfolio, message_send=message_send)
+
+
+@app.route("/index.html")
+def refresh_website():
+    return render_template("index.html")
 
 
 if __name__ == "__main__":
